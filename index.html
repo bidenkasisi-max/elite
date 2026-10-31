@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abroad Works | Trusted international job opportunities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f7f9; --surf:#ffffff; --ink:#12263a; --muted:#5c7080; --line:#dbe5ea;
+  --sea:#0e7c86; --sun:#f2b705; --hero:#12263a; --hero-soft:#17324f; --card:#eef6f8; --shadow:0 18px 40px rgba(18,38,58,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; font:16px/1.6 "Figtree", Arial, sans-serif; background:var(--bg); color:var(--ink)}
+a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block}
+.container{max-width:1180px; margin:0 auto; padding:0 20px}
+header{background:linear-gradient(135deg, var(--hero) 0%, var(--hero-soft) 100%); color:#fff}
+nav{display:flex; align-items:center; justify-content:space-between; padding:18px 0; gap:20px}
+.brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-.02em; font-size:1.25rem}
+.brand-mark{width:44px; height:44px; border-radius:14px; background:rgba(255,255,255,.08); display:grid; place-items:center; box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+.brand-mark::before{content:"AW"; font:800 .78rem "Bricolage Grotesque", sans-serif; color:#fff}
+.nav-links{display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+.nav-links a{color:rgba(255,255,255,.83); font-weight:600}
+.nav-links .primary{background:var(--sun); color:var(--ink); padding:10px 18px; border-radius:999px; font-weight:800}
+.hero{display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; padding:52px 0 64px}
+.eyebrow{display:inline-block; padding:7px 12px; border-radius:999px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); margin-bottom:18px; letter-spacing:.03em; text-transform:uppercase; font-size:.72rem; font-weight:700}
+h1{margin:0 0 16px; font:800 clamp(2.4rem, 4vw, 4.2rem)/1.02 "Bricolage Grotesque", sans-serif; letter-spacing:-.04em; max-width:12ch}
+.hero p{margin:0 0 26px; max-width:55ch; color:rgba(255,255,255,.8); font-size:1.05rem}
+.hero-actions{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:20px}
+.btn{display:inline-flex; align-items:center; justify-content:center; border-radius:12px; border:none; padding:13px 22px; font:700 1rem/1 "Figtree", sans-serif; cursor:pointer; transition:.2s ease}
+.btn.primary{background:var(--sun); color:var(--ink)}
+.btn.secondary{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.28)}
+.hero-stats{display:flex; gap:26px; flex-wrap:wrap; padding-top:8px}
+.stat strong{display:block; font:800 1.6rem/1.1 "Bricolage Grotesque", sans-serif}
+.stat span{color:rgba(255,255,255,.7); font-size:.9rem}
+.hero-visual{position:relative; min-height:420px}
+.photo-stack{position:absolute; inset:0}
+.photo-card{position:absolute; overflow:hidden; border-radius:22px; box-shadow:var(--shadow); border:3px solid rgba(255,255,255,.6)}
+.photo-card img{width:100%; height:100%; object-fit:cover}
+.card-a{width:52%; height:58%; right:16%; top:0}
+.card-b{width:42%; height:48%; left:4%; bottom:10%}
+.card-c{width:48%; height:48%; right:0; bottom:0}
+.section{padding:80px 0}
+.section-header{display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:26px}
+.section-header h2{margin:0; font:800 clamp(2rem, 3vw, 3rem)/1.1 "Bricolage Grotesque", sans-serif; letter-spacing:-.04em}
+.section-header p{margin:0; max-width:60ch; color:var(--muted)}
+.about-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:stretch}
+.info-card, .feature-card, .worker-card{background:var(--surf); border:1px solid var(--line); border-radius:24px; box-shadow:0 12px 30px rgba(18,38,58,.04)}
+.info-card{padding:32px}
+.info-card p{color:var(--muted); margin:0 0 18px}
+.check-list{display:grid; gap:12px; margin:0; padding:0; list-style:none}
+.check-list li{display:flex; align-items:flex-start; gap:12px; color:var(--ink); font-weight:600}
+.check-list li::before{content:"✓"; display:inline-grid; place-items:center; width:22px; height:22px; border-radius:50%; background:#eaf7f2; color:#0d7a5f; font-weight:800; flex:none}
+.company-panel{padding:28px; background:linear-gradient(135deg, #f5fbff, #eef6f8); border:1px solid var(--line)}
+.company-panel h3{margin:0 0 20px; font:800 1.5rem/1.1 "Bricolage Grotesque", sans-serif}
+.company-row{display:grid; gap:18px; grid-template-columns:repeat(2, minmax(0, 1fr)); margin-top:20px}
+.metric{padding:18px 16px; border-radius:18px; background:#fff; border:1px solid var(--line)}
+.metric strong{display:block; font:800 1.7rem/1.1 "Bricolage Grotesque", sans-serif; margin-bottom:6px}
+.metric span{color:var(--muted)}
+.features{display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px}
+.feature-card{padding:24px}
+.feature-icon{width:52px; height:52px; border-radius:16px; display:grid; place-items:center; background:#edf7fa; font-size:1.5rem; margin-bottom:16px}
+.feature-card h3{margin:0 0 10px; font-size:1.25rem}
+.feature-card p{color:var(--muted); margin:0}
+.gallery{display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:20px}
+.worker-card{overflow:hidden}
+.worker-card img{width:100%; height:260px; object-fit:cover}
+.worker-card .txt{padding:16px 18px}
+.worker-card h3{margin:0 0 6px; font-size:1.18rem}
+.worker-card p{margin:0; color:var(--muted)}
+.cta{padding:80px 0 90px}
+.cta-card{display:flex; align-items:center; justify-content:space-between; gap:18px; background:linear-gradient(135deg, var(--sea), #0d5d69); color:#fff; border-radius:28px; padding:28px 30px; box-shadow:var(--shadow)}
+.cta-card h2{margin:0; font:800 clamp(1.8rem, 3vw, 2.6rem)/1.1 "Bricolage Grotesque", sans-serif; letter-spacing:-.04em}
+.cta-card p{margin:8px 0 0; color:rgba(255,255,255,.8)}
+footer{padding:28px 0 42px; color:var(--muted); border-top:1px solid var(--line)}
+.footer-wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.socials{display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.socials a{display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%; background:var(--surf); border:1px solid var(--line); color:var(--ink); box-shadow:0 8px 18px rgba(18,38,58,.04); transition:transform .2s ease, box-shadow .2s ease; font-weight:900}
+.socials a:hover{transform:translateY(-2px) scale(1.03); box-shadow:0 12px 22px rgba(18,38,58,.08)}
+.socials svg{width:20px; height:20px; display:block; fill:currentColor}
+.socials .whatsapp{background:#eafaf1; color:#1ea85c}
+.socials .facebook{background:#eef4ff; color:#1877f2}
+.socials .telegram{background:#eaf6ff; color:#2aa7e7}
+.socials .tiktok{background:#f5f0ff; color:#111111}
+.socials .instagram{background:linear-gradient(135deg, #f8d365 0%, #f46f30 25%, #c136b6 60%, #5f4ad9 100%); color:#fff}
+@media (max-width: 900px){
+  .hero, .about-grid, .features, .gallery{grid-template-columns:1fr}
+  .hero{padding-top:38px}
+  .section-header{display:block}
+  .section-header p{margin-top:12px}
+  .cta-card{flex-direction:column; align-items:flex-start}
+}
+@media (max-width: 640px){
+  .nav-links{display:none}
+  .hero-visual{min-height:320px}
+  .company-row{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <span>Abroad Works</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#workers">Workers</a>
+        <a class="primary" href="Abroad%20Works%20%E2%80%93%20Jobs%20in%20other%20countries.html">View Jobs</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Trusted international hiring</div>
+        <h1>Helping workers find real jobs abroad.</h1>
+        <p>Abroad Works connects job seekers with employers who offer clear contracts, honest information, and support before travel. We focus on real opportunities for skilled and general workers in healthcare, logistics, hospitality, construction, care, and more.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="Abroad%20Works%20%E2%80%93%20Jobs%20in%20other%20countries.html">Explore jobs</a>
+          <a class="btn secondary" href="#about">Learn more</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>18k+</strong><span>Applications reviewed</span></div>
+          <div class="stat"><strong>40+</strong><span>Countries served</span></div>
+          <div class="stat"><strong>24/7</strong><span>Support guidance</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Workers and job opportunities illustration">
+        <div class="photo-stack">
+          <div class="photo-card card-a">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Workers in a professional environment">
+          </div>
+          <div class="photo-card card-b">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Construction worker and team discussion">
+          </div>
+          <div class="photo-card card-c">
+            <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=900&q=80" alt="Hospitality worker smiling in workplace">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Abroad Works</h2>
+        <p>We make international hiring simpler, safer, and more transparent for workers who are looking for better opportunities overseas.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="info-card">
+          <p>We help candidates understand where they are applying, what the role includes, and what support employers provide before departure. Our mission is to reduce confusion and protect workers from fake offers, hidden fees, and unclear terms.</p>
+          <ul class="check-list">
+            <li>Clear job details, duties, and contract length.</li>
+            <li>Verified employer information and job categories.</li>
+            <li>Transparent work arrangements, support, and benefits.</li>
+            <li>Guidance for workers before they accept a job abroad.</li>
+          </ul>
+        </div>
+
+        <div class="company-panel">
+          <h3>Why workers trust us</h3>
+          <div class="company-row">
+            <div class="metric">
+              <strong>100%</strong>
+              <span>Job listings include key role information</span>
+            </div>
+            <div class="metric">
+              <strong>40+</strong>
+              <span>Active countries and recruitment markets</span>
+            </div>
+            <div class="metric">
+              <strong>2.4k</strong>
+              <span>Employers and agencies reviewed</span>
+            </div>
+            <div class="metric">
+              <strong>1:1</strong>
+              <span>Candidate support and guidance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>What we offer</h2>
+        <p>We support workers and employers across major categories of overseas employment.</p>
+      </div>
+
+      <div class="features">
+        <article class="feature-card">
+          <div class="feature-icon">🏥</div>
+          <h3>Medical field jobs</h3>
+          <p>Connect nurses, caregivers, nursing assistants, clinic staff, and medical support workers with hospitals and care centers abroad.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🏗️</div>
+          <h3>Construction and trade</h3>
+          <p>Find electricians, welders, construction workers, and skilled tradespeople ready for international projects.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Logistics and transport</h3>
+          <p>Access warehouse roles, delivery jobs, and transport work in fast-moving global supply chains.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="workers">
+    <div class="container">
+      <div class="section-header">
+        <h2>Real people, real opportunities</h2>
+        <p>From hospitality teams to care workers, our listings focus on people who want stable employment and honest job information.</p>
+      </div>
+
+      <div class="gallery">
+        <article class="worker-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" alt="Female caregiver smiling at work">
+          <div class="txt">
+            <h3>Care worker</h3>
+            <p>Supportive work in healthcare and home care settings.</p>
+          </div>
+        </article>
+
+        <article class="worker-card">
+          <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895978?auto=format&fit=crop&w=900&q=80" alt="Medical professional in clinic">
+          <div class="txt">
+            <h3>Medical assistant</h3>
+            <p>Clinic, hospital, and patient care roles in the medical field.</p>
+          </div>
+        </article>
+
+        <article class="worker-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Male construction worker outdoors">
+          <div class="txt">
+            <h3>Construction team</h3>
+            <p>Skilled work for building sites and infrastructure jobs.</p>
+          </div>
+        </article>
+
+        <article class="worker-card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Worker in hospitality environment">
+          <div class="txt">
+            <h3>Hospitality staff</h3>
+            <p>Hotel, restaurant, and service roles for dedicated workers.</p>
+          </div>
+        </article>
+
+        <article class="worker-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Warehouse team working together">
+          <div class="txt">
+            <h3>Logistics team</h3>
+            <p>Warehouse and delivery jobs in active supply chain operations.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card">
+        <div>
+          <h2>Ready to explore jobs abroad?</h2>
+          <p>See the latest opportunities and apply to roles that match your skills.</p>
+        </div>
+        <a class="btn primary" href="Abroad%20Works%20%E2%80%93%20Jobs%20in%20other%20countries.html">Open jobs page</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <div>© 2026 Abroad Works. Connecting workers with honest job opportunities.</div>
+    <div class="socials" aria-label="Company social media links">
+      <a class="whatsapp" href="https://wa.me/17602864531" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.05 4.95A9.88 9.88 0 0 0 12.12 2C6.72 2 2.25 6.47 2.25 11.87c0 1.66.43 3.28 1.25 4.7L2 22l5.58-1.47A9.96 9.96 0 0 0 12.12 21c5.4 0 9.88-4.46 9.88-9.88 0-2.64-1.03-5.14-2.95-7.17ZM12.12 18.2c-1.41 0-2.79-.38-4.01-1.1l-.29-.17-3.31.87.88-3.23-.19-.3A7.35 7.35 0 0 1 4.8 11.9c0-4.08 3.32-7.4 7.32-7.4a7.37 7.37 0 0 1 7.4 7.4c0 4.08-3.32 7.4-7.4 7.4Zm4.06-5.55c-.22-.11-1.3-.64-1.5-.72-.2-.08-.35-.12-.5.12-.15.22-.57.72-.7.87-.13.15-.26.17-.48.06-.22-.11-.93-.34-1.77-1.1-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.08-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.76.74-.76 1.8s.78 2.08.89 2.22c.11.15 1.53 2.34 3.7 3.28.52.22.92.35 1.24.45.53.17 1.01.15 1.39.09.42-.06 1.3-.53 1.49-1.05.19-.52.19-.96.13-1.05-.06-.1-.2-.16-.42-.27Z"/></svg>
+      </a>
+      <a class="facebook" href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V7.5c0-.87.24-1.46 1.49-1.46H17V3.1c-.34-.05-1.5-.14-2.85-.14-2.82 0-4.75 1.72-4.75 4.88V11H7v3h2.4v8h4.1Z"/></svg>
+      </a>
+      <a class="telegram" href="https://t.me/yourchannel" target="_blank" rel="noreferrer" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.18 4.35c.41-.16.72.06.58.58l-2.65 12.52c-.14.66-.64.82-1.17.52l-3.14-2.31-1.51 1.46c-.17.16-.3.3-.62.3l.22-3.2 6.93-6.25c.3-.27-.07-.42-.47-.14L7.9 13.65l-3.22-.96c-.7-.22-.71-.7.15-1.04L20 4.2c.18-.08.33-.12.48-.1l.7.25Z"/></svg>
+      </a>
+      <a class="tiktok" href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noreferrer" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.7 3c.28 1.38 1.1 2.51 2.44 3.19a5.25 5.25 0 0 0 2.86.91v2.46a7.72 7.72 0 0 1-2.52-.68v6.19c0 2.85-2.31 5.16-5.15 5.16s-5.16-2.31-5.16-5.16 2.31-5.15 5.16-5.15c.4 0 .79.04 1.16.12v2.57a3.03 3.03 0 0 0-1.16-.24c-1.64 0-2.97 1.33-2.97 2.97 0 1.66 1.33 2.97 2.97 2.97 1.63 0 2.97-1.31 2.97-2.97V3h2.9Z"/></svg>
+      </a>
+      <a class="instagram" href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5-3.2a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
